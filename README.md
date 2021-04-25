@@ -132,7 +132,7 @@ See [CHANGELOG](CHANGELOG.md) file for further information
 See [TODO](TODO) file for further information
 
 ## License
-See (COPYING](COPYING) file for further information
+See [COPYING](COPYING) file for further information
 
 ============  
 Please report bugs and tell me what you like/dislike to <opensource@initzero.it>
