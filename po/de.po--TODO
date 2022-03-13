@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 3.0\n"
 "Report-Msgid-Bugs-To: opensource@initzero.it\n"
-"POT-Creation-Date: 2021-11-17 19:10+0100\n"
+"POT-Creation-Date: 2022-03-13 19:10+0100\n"
 "PO-Revision-Date: 2006-01-30 17:04+0100\n"
-"Last-Translator: Ugo Viti <ugo.viti@initzero.it>\n"
+"Last-Translator: Benjamin M. Berwien <2022.03@post.berwie.com>\n"
 "Language-Team: Ugo Viti <ugo.viti@initzero.it>\n"
-"Language: it\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,39 +19,40 @@ msgstr ""
 #: src/synbak.sh.in:120
 #, sh-format
 msgid "ERROR: the directory '${dir_tmp}' doesn't exist"
-msgstr "ERRORE: la directory '${dir_tmp}' non esiste"
+msgstr "FEHLER: Das Verzeichnis '${dir_tmp}' existiert nicht."
 
 #: src/synbak.sh.in:204
 #, sh-format
 msgid "ERROR: can't find the '${sys_file_functions}' file"
-msgstr ""
-"ERRORE: non riesco a trovare il file di sistema '${sys_file_functions}'"
+msgstr "FEHLER: Kann die Datei '${sys_file_functions}' nicht finden."
 
 #: src/synbak.sh.in:233
 msgid "ERROR: no 'system name' specified - abort"
-msgstr "ERRORE: nessun 'nome di sistema' specificato - interrompo."
+msgstr "FEHLER: Kein 'System Name' angegeben - Abbruch."
 
 #: src/synbak.sh.in:240
 msgid "ERROR: no 'backup method' specified - abort"
-msgstr "ERRORE: nessun 'metodo di backup' specifiato - interrompo."
+msgstr "FEHLER: Keine 'Backup Methode' angegeben - Abbruch."
 
 #: src/synbak.sh.in:249
 #, sh-format
 msgid "ERROR: '${method}' backup method doesn't exist!"
-msgstr "ERRORE: il metodo '${method}' non esiste!"
+msgstr "FEHLER: Keine Backup Methode '${method}' existiert nicht!"
 
 #: src/synbak.sh.in:252
 msgid "valid methods:"
-msgstr "metodi validi:"
+msgstr "Gueltige Methoden:"
 
 #: src/synbak.sh.in:262
 #, sh-format
 msgid "ERROR: '${report}' backup report doesn't exist!"
-msgstr "ERRORE: il report '${report}' non esiste!"
+msgstr "FEHLER: Der Bericht '${report}' existiert nicht!"
 
 #: src/synbak.sh.in:265
 msgid "valid reports:"
-msgstr "report validi:"
+msgstr "Gueltige Berichte:"
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ DONE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 #: src/synbak.sh.in:296
 #, sh-format
@@ -67,7 +68,7 @@ msgstr ""
 #: src/synbak.sh.in:323
 #, sh-format
 msgid "ERROR: '${usr_file_conf}' system config file doesn't exist!"
-msgstr "ERRORE: il file di configurazione '${usr_file_conf}' non esiste!"
+msgstr "FEHLER: il file di configurazione '${usr_file_conf}' existiert nicht.!"
 
 #: src/synbak.sh.in:339
 #, sh-format
@@ -106,7 +107,7 @@ msgstr ""
 "opzione: argomento:           descrizione:\n"
 "------------------------------------------------------------------------------\n"
 "  -s     <nome sistema>       nome del sistema di cui fare il backup\n"
-"  -m     <nome metodo>        nome del metodo di backup da utilizzare\n"
+"  -m     <nome metodo>        nome del Backup Methode da utilizzare\n"
 "  -r     <nome report>        gestisci solo un report e non un backup "
 "(opzionale)\n"
 "  -M     <opzioni metodo>     opzioni addizionali per il metodo (opzionale)\n"
@@ -146,7 +147,7 @@ msgstr "variabili di configurazione valide:"
 
 #: src/synbak.sh.in:446
 msgid "invalid switch specified - abort."
-msgstr "l'argomento specifiato non è valido - interrompo."
+msgstr "l'argomento specifiato non è valido - Abbruch."
 
 #: src/functions.sh:39
 msgid "             System: "
@@ -318,22 +319,22 @@ msgstr "Stato:"
 
 #: src/functions.sh:85
 msgid "ERROR: an error is occurred in this step, follow error details:"
-msgstr "ERRORE: è avvenuto un errore in questo passo, segue il dettaglio:"
+msgstr "FEHLER: è avvenuto un errore in questo passo, segue il dettaglio:"
 
 #: src/functions.sh:86
 #, sh-format
 msgid "ERROR: the remote host '${backup_source_uri_host}' is down"
-msgstr "ERRORE: l'host remoto '${backup_source_uri_host}' è irraggiungibile"
+msgstr "FEHLER: l'host remoto '${backup_source_uri_host}' è irraggiungibile"
 
 #: src/functions.sh:87
 #, sh-format
 msgid "ERROR: '$dir' directory doesn't exist or it isn't accessible"
-msgstr "ERRORE: la directory '$dir' non esiste o non è accessibile"
+msgstr "FEHLER: Das Verzeichnis '$dir' existiert nicht. o non è accessibile"
 
 #: src/functions.sh:88
 #, sh-format
 msgid "ERROR: '$file' file doesn't exist or it isn't accessible"
-msgstr "ERRORE: il file '$file' non esiste o non è accessibile"
+msgstr "FEHLER: il file '$file' existiert nicht. o non è accessibile"
 
 #: src/functions.sh:89
 #, sh-format
@@ -341,7 +342,7 @@ msgid ""
 "ERROR: '$file' file doesn't exist, isn't writable or it's not a character "
 "device"
 msgstr ""
-"ERRORE: il file '$file' non esiste, non è scrivibile o non è un dispositivo "
+"FEHLER: il file '$file' existiert nicht., non è scrivibile o non è un dispositivo "
 "valido"
 
 #: src/functions.sh:90
@@ -349,7 +350,7 @@ msgstr ""
 msgid ""
 "ERROR: in file '${usr_file_conf}' the mandatory '${field}' field is empty"
 msgstr ""
-"ERRORE: nel file '${usr_file_conf}' il campo obbligatorio '${field}' è vuoto"
+"FEHLER: nel file '${usr_file_conf}' il campo obbligatorio '${field}' è vuoto"
 
 #: src/functions.sh:91
 #, sh-format
@@ -357,13 +358,13 @@ msgid ""
 "ERROR: in file '${usr_file_conf}' the field '${field}' contains invalid "
 "data: '${value}'"
 msgstr ""
-"ERRORE: nel file  '${usr_file_conf}' il campo '${field}' contiene dati non "
+"FEHLER: nel file  '${usr_file_conf}' il campo '${field}' contiene dati non "
 "validi: '${value}'"
 
 #: src/functions.sh:92
 msgid "ERROR: not erasing old backups because an ERROR is occurred"
 msgstr ""
-"ERRORE: non rimuovo i vecchi backup poichè è avvenuto un errore in una o più "
+"FEHLER: non rimuovo i vecchi backup poichè è avvenuto un errore in una o più "
 "fasi del backup"
 
 #: src/functions.sh:93
@@ -372,8 +373,8 @@ msgid ""
 "ERROR: the specified base URI '${backup_source_uri}' is not valid for the "
 "'${method}' backup method"
 msgstr ""
-"ERRORE: l'URI remota specificata '${backup_source_uri}' non è valida per il "
-"metodo di backup '${method}'"
+"FEHLER: l'URI remota specificata '${backup_source_uri}' non è valida per il "
+"Backup Methode '${method}'"
 
 #: src/functions.sh:94
 #, sh-format
@@ -381,12 +382,12 @@ msgid ""
 "ERROR: the specified remote protocol '${backup_source_uri_protocol}' is "
 "unsupported by '${method}' backup method"
 msgstr ""
-"ERRORE: ll protocollo remoto specificato '${backup_source_uri_protocol}' non "
-"è supportato dal metodo di backup '${method}'"
+"FEHLER: ll protocollo remoto specificato '${backup_source_uri_protocol}' non "
+"è supportato dal Backup Methode '${method}'"
 
 #: src/functions.sh:95
 msgid "ERROR: unsupported remote mount share"
-msgstr "ERRORE: condivisione remota da montare non supportata"
+msgstr "FEHLER: condivisione remota da montare non supportata"
 
 #: src/functions.sh:96
 #, sh-format
@@ -394,7 +395,7 @@ msgid ""
 "ERROR: extra options are required, follow a list of usable extra options: "
 "$extra_option_right"
 msgstr ""
-"ERRORE: sono richieste delle opzioni extra, segue una lista di opzioni "
+"FEHLER: sono richieste delle opzioni extra, segue una lista di opzioni "
 "utilizzabili: $extra_option_right"
 
 #: src/functions.sh:97
@@ -403,18 +404,18 @@ msgid ""
 "ERROR: the specified extra option '$current_option' is invalid, follow a "
 "list of usable extra options: $extra_option_right"
 msgstr ""
-"ERRORE: l'opzione extra specificata '$current_option' non è valida, segue "
+"FEHLER: l'opzione extra specificata '$current_option' non è valida, segue "
 "una lista di opzioni usabili: $extra_option_right"
 
 #: src/functions.sh:98
 msgid "ERROR: internal error, please report this to developers"
-msgstr "ERRORE: errore interno, si prega di informare gli sviluppatori"
+msgstr "FEHLER: errore interno, si prega di informare gli sviluppatori"
 
 #: src/functions.sh:99
 #, sh-format
 msgid "ERROR: cuncurrent backup job limit reached: $method_concurrent_limit"
 msgstr ""
-"ERRORE: raggiunto limite di lavori contemporanei: $method_concurrent_limit"
+"FEHLER: raggiunto limite di lavori contemporanei: $method_concurrent_limit"
 
 #: src/functions.sh:100 src/report/html/html.sh:85
 msgid "OK"
@@ -422,7 +423,7 @@ msgstr "OK"
 
 #: src/functions.sh:101 src/report/html/html.sh:86
 msgid "ERROR"
-msgstr "ERRORE"
+msgstr "FEHLER"
 
 #: src/functions.sh:102 src/report/html/html.sh:91
 msgid "unknow"
@@ -434,7 +435,7 @@ msgstr "Informazioni backup: "
 
 #: src/functions.sh:114
 msgid "Directory list of "
-msgstr "Contenuto della directory "
+msgstr "Contenuto delDas Verzeichnis "
 
 #: src/functions.sh:118
 msgid "Free space and active mount points: "
@@ -479,7 +480,7 @@ msgid ""
 "ERROR: the html destination directory '${report_html_destination_backup}' is "
 "not writable"
 msgstr ""
-"ERRORE: la directory '${report_html_destination_backup}' html di "
+"FEHLER: Das Verzeichnis '${report_html_destination_backup}' html di "
 "destinazione non è scrivibile"
 
 #: src/report/html/html.sh:68 src/report/html/html.sh:69
