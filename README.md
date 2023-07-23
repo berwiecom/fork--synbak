@@ -23,7 +23,7 @@ synbak is a wrapper for several existing backup programs suppling the end user w
 
 Moreover, if you are a developer and want to contribute, the modular nature of synbak will allow you to easly write new backup methods, reports, and translations.
 
-Please read the FAQ file to discover many useful tips.
+Please read the [FAQ](FAQ.md) to discover many useful tips.
 
 
 ## Features
